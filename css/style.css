@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: white;
+}
+
+
+/* utility */
+.dflex{
+    display: flex;
+}
+
+main{
+    background-color: #141922;
+    height: calc(100vh - 100px);
+}
+
+footer{
+    height: 100px;
+    background-color: #282828;
+}
+
+.sidebar{
+    width: 50px;
+    background-color: black;
+}
+
+.content{
+    width: calc(100% - 50px);
+}
+
+#cta{
+    color: var(--white);
+    text-align: end;
+    background-color: rgba(0,0,0, 0.3);
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    width: calc(100% - 50px);
+}
