@@ -98,3 +98,33 @@ footer{
     height: 100px;
     background-color: #282828;
 }
+
+
+@media screen and (min-width: 576px){
+    .sidebar{
+        width: 200px;
+    }
+
+    .content{
+        width: calc(100% - 200px);
+    }
+
+    .cta{
+        width: calc(100% - 200px);
+        left: 200px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .cover-music{
+        width: calc(25% - 40px);
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    .cover-music{
+        width: calc(100% / 6 - 40px);
+    }
+    
+}
