@@ -6,22 +6,37 @@
 
 :root{
     --white: white;
+    --grey: #7d7f84;
 }
 
 
-/* utility */
+/* common */
 .dflex{
     display: flex;
 }
 
+.white{
+    color: var(--white);
+}
+
+.grey{
+    color: var(--grey);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+/* css */
+
 main{
     background-color: #141922;
     height: calc(100vh - 100px);
-}
-
-footer{
-    height: 100px;
-    background-color: #282828;
 }
 
 .sidebar{
@@ -33,8 +48,7 @@ footer{
     width: calc(100% - 50px);
 }
 
-#cta{
-    color: var(--white);
+.cta{
     text-align: end;
     background-color: rgba(0,0,0, 0.3);
     height: 70px;
@@ -43,4 +57,25 @@ footer{
     top: 0;
     left: 50px;
     width: calc(100% - 50px);
+}
+
+.text-nav{
+    padding-top: 70px;
+    text-align: center;
+}
+
+.text-nav ul li{
+    padding: 0 13px;
+    line-height: 50px;
+    
+}
+
+
+
+
+
+
+footer{
+    height: 100px;
+    background-color: #282828;
 }
