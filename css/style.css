@@ -27,11 +27,18 @@ a{
     text-decoration: none;
 }
 
-ul li{
+.text-nav ul li{
     list-style: none;
     display: inline-block;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
+.overflow{
+    overflow-y: scroll;
+}
 /* css */
 
 main{
@@ -67,12 +74,24 @@ main{
 .text-nav ul li{
     padding: 0 13px;
     line-height: 50px;
-    
+    list-style: none;
+    display: inline-block;
 }
 
+#recently-played h2, #create-for h2, #popular h2{
+    padding: 20px;
+}
 
+#recently-played ul li, #create-for ul li, #popular ul li{
+    list-style: none;
+}
 
-
+.cover-music{
+    height: 200px;
+    width: calc(50% - 40px);
+    margin: 20px;
+    background-color: red;
+}
 
 
 footer{
