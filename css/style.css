@@ -9,6 +9,9 @@
     --grey: #7d7f84;
 }
 
+html{
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* common */
 .dflex{
@@ -62,33 +65,31 @@ main{
     min-height: 400px;
 }
 
-.sidebar-top{
-    overflow-y: hidden;
+.logo{
+    display: flex;
+    align-items: center;
 }
+
+.biglogo{
+    display: none;
+}
+
+.small-logo{
+    width: 100%;
+    padding: 5px 7px;
+}
+
+.sidebar span{
+    display: none;
+}
+
 
 .sidebar .sidebar-top .logo img{
-    vertical-align: middle;
-    width: 60%;
-    margin-left: 20px;
-}
-
-.logo{
-    line-height: 70px;
     vertical-align: middle;
 }
 
 .sidebar-nav img{
     height: 30px;
-    vertical-align: middle;
-}
-
-.sidebar-nav a{
-    text-decoration: none;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.sidebar-nav .text-img{
     vertical-align: middle;
 }
 
@@ -98,21 +99,38 @@ main{
 
 .sidebar-top{
     height: calc(100% - 100px);
-    display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    display: none;
 }
 
 .sidebar-bottom{
     height: 100px;
-    background-color: aqua;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-bottom .install img{
+    height: 20px;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+.profile img{
+    width: 30px;
+    height: 30px;
+    background-color: #808080;
+    border-radius: 50%;
+    vertical-align: middle;
+    
 }
 
 .playlist{
     display: none;
 }
-
-
-
 
 .content{
     width: calc(100% - 50px);
@@ -176,6 +194,67 @@ footer{
 @media screen and (min-width: 576px){
     .sidebar{
         width: 250px;
+    }
+
+    .sidebar span{
+        display: inline-block;
+    }
+
+    .sidebar-top{
+        overflow-y: hidden;
+        align-items: start;
+    }
+
+    .logo{
+        line-height: 70px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .small-logo{
+        display: none;
+    }
+
+    .biglogo{
+        display: inline-block;
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .sidebar-nav a{
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .sidebar-nav .text-img{
+        vertical-align: middle;
+    }
+
+    .sidebar-bottom a{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+    
+    .sidebar-bottom a span{
+        vertical-align: middle;
+        font-weight: bold;
+        margin-left: 8px;
+    }
+
+    .sidebar-bottom{
+        display: block;
+    }
+
+    .sidebar-bottom .install img {
+        margin-bottom: 0px;
+    }
+
+    hr{
+        border: 1px solid #7d7f84;
+        margin: 10px 20px;
+        display: block;
     }
 
     .content{

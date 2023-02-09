@@ -7,13 +7,17 @@
         <title>Spotify</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <body>
         <main class="dflex">
 
             <aside class="sidebar">
-                <div class="sidebar-top">
+                <div class="sidebar-top dflex">
                     <div class="logo">
-                        <img src="img/logo.svg" alt="logo spotify">
+                        <img src="img/logo.svg" alt="logo spotify" class="biglogo">
+                        <img src="img/logo-small.svg" alt="logo spotify" class="small-logo">
                     </div>
 
                     <div class="sidebar-nav">
@@ -25,13 +29,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="white">
+                                <a href="#" class="grey">
                                     <img src="img/search.svg" alt="icona home">
                                     <span class="text-img">Cerca</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="white">
+                                <a href="#" class="grey">
                                     <img src="img/libreria.svg" alt="icona home">
                                     <span class="text-img">La tua libreria</span>
                                 </a>
@@ -57,8 +61,16 @@
                     </div>
                 </div>
 
-                <div class="sidebar-bottom">
-                    testo
+                <div class="sidebar-bottom dflex">
+                    <a href="#" class="install">
+                        <img src="img/download.svg" alt="download">
+                        <span class="grey">Installa app</span>
+                    </a>
+                    <hr>
+                    <a href="#" class="profile">
+                        <img src="img/profile.svg" alt="foto profilo personale">
+                        <span class="white">John Doe</span>
+                    </a>
                 </div>
             </aside>
 
