@@ -50,11 +50,17 @@ a{
 ul li{
     list-style: none;
 }
+
 .text-center{
     text-align: center;
 }
+
 .block{
     display: block;
+}
+
+.border50{
+    border-radius: 50%;
 }
 /* css */
 
@@ -153,7 +159,10 @@ hr{
 }
 
 .cta span{
-    margin-right: 20px;
+    margin-right: 40px;
+    border: 1px white solid;
+    padding: 8px 40px;
+    border-radius: 30px;
 }
 
 .text-nav{
@@ -183,6 +192,12 @@ hr{
 
 .cover-music img{
     width: 100%;
+}
+
+#create-for span, #popular span{
+padding-left: 20px;
+padding-bottom: 20px;
+display: inline-block;
 }
 
 footer{
