@@ -47,6 +47,8 @@ a{
 .space-between{
     justify-content: space-between;
 }
+
+
 /* css */
 
 main{
@@ -57,6 +59,36 @@ main{
 .sidebar{
     width: 50px;
     background-color: black;
+}
+
+.sidebar .sidebar-top .logo img{
+    vertical-align: middle;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.logo{
+    line-height: 70px;
+    vertical-align: middle;
+}
+
+.sidebar-nav img{
+    height: 35px;
+    vertical-align: middle;
+}
+
+.sidebar-nav a{
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sidebar-nav .text-img{
+    vertical-align: middle;
+}
+
+.sidebar-nav li{
+    margin: 20px;
 }
 
 .content{
@@ -123,16 +155,16 @@ footer{
 
 @media screen and (min-width: 576px){
     .sidebar{
-        width: 200px;
+        width: 250px;
     }
 
     .content{
-        width: calc(100% - 200px);
+        width: calc(100% - 250px);
     }
 
     .cta{
-        width: calc(100% - 200px);
-        left: 200px;
+        width: calc(100% - 250px);
+        left: 250px;
     }
 }
 
