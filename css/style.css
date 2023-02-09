@@ -27,10 +27,6 @@ a{
     text-decoration: none;
 }
 
-.text-nav ul li{
-    list-style: none;
-    display: inline-block;
-}
 
 .wrap{
     flex-wrap: wrap;
@@ -48,17 +44,26 @@ a{
     justify-content: space-between;
 }
 
-
+ul li{
+    list-style: none;
+}
+    
 /* css */
 
 main{
     background-color: #141922;
     height: calc(100vh - 100px);
+    overflow-y: hidden;
 }
 
 .sidebar{
     width: 50px;
     background-color: black;
+    min-height: 400px;
+}
+
+.sidebar-top{
+    overflow-y: hidden;
 }
 
 .sidebar .sidebar-top .logo img{
@@ -73,7 +78,7 @@ main{
 }
 
 .sidebar-nav img{
-    height: 35px;
+    height: 30px;
     vertical-align: middle;
 }
 
@@ -88,8 +93,26 @@ main{
 }
 
 .sidebar-nav li{
-    margin: 20px;
+    margin: 15px 20px;
 }
+
+.sidebar-top{
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-bottom{
+    height: 100px;
+    background-color: aqua;
+}
+
+.playlist{
+    display: none;
+}
+
+
+
 
 .content{
     width: calc(100% - 50px);
@@ -118,7 +141,6 @@ main{
 .text-nav ul li{
     padding: 0 13px;
     line-height: 50px;
-    list-style: none;
     display: inline-block;
 }
 
@@ -126,9 +148,7 @@ main{
     padding: 20px;
 }
 
-#recently-played ul li, #create-for ul li, #popular ul li{
-    list-style: none;
-}
+
 
 .cover-music{
     height: 200px;
@@ -165,6 +185,45 @@ footer{
     .cta{
         width: calc(100% - 250px);
         left: 250px;
+    }
+
+    .playlist ul{
+        overflow-y: scroll;
+    }
+    
+    .playlist ul li{
+        margin: 18px 20px;
+    }
+    
+    .playlist{
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .plus{
+        display: inline-block;
+        background-color: #a3a3a3;
+        padding: 0px 13px;
+        font-size: 40px;
+        vertical-align: middle;
+    }
+    
+    .playlist h4{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    
+    .playlist a{
+        vertical-align: middle;
+        margin-left: 20px;
+        margin-top: 18px;
+        color: black;
+    }
+    
+    .playlist a span{
+        vertical-align: middle;
+        margin-left: 8px;
     }
 }
 
