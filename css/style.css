@@ -50,7 +50,12 @@ a{
 ul li{
     list-style: none;
 }
-    
+.text-center{
+    text-align: center;
+}
+.block{
+    display: block;
+}
 /* css */
 
 main{
@@ -154,6 +159,7 @@ hr{
 .text-nav{
     padding-top: 70px;
     text-align: center;
+    font-weight: bold;
 }
 
 .text-nav ul li{
@@ -166,15 +172,18 @@ hr{
     padding: 20px;
 }
 
-
-
 .cover-music{
-    height: 200px;
-    width: calc(50% - 40px);
-    margin: 20px;
-    background-color: red;
+    width: calc(50% - 30px);
+    margin: 5px 10px 10px 20px;
 }
 
+.content-cover h4{
+    margin: 10px 0px;
+}
+
+.cover-music img{
+    width: 100%;
+}
 
 footer{
     height: 100px;
@@ -308,14 +317,15 @@ footer{
 
 @media screen and (min-width: 768px){
     .cover-music{
-        width: calc(25% - 40px);
+        width: calc(100% / 4 - 30px);
     }
     
 }
 
 @media screen and (min-width: 992px){
     .cover-music{
-        width: calc(100% / 6 - 40px);
+        width: calc(100% / 6 - 30px);
     }
+    
     
 }
