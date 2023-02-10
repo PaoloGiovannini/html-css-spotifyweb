@@ -73,9 +73,14 @@ ul li{
 
 
 
-.width70{
-    width: 70%;
+.container-bar{
+    width: 100%;
 }
+
+.player-mini .bar{
+    display: none;
+}
+
 /* css */
 
 main{
@@ -413,6 +418,8 @@ background-color: var(--white);
 
 /* fine hover */
 
+
+
 @media screen and (min-width: 576px){
     .sidebar{
         width: 250px;
@@ -555,8 +562,20 @@ background-color: var(--white);
         margin-left: 0;
     }
 
-    
+    .width70{
+        width: 70%;
+    }
+
+    .player-mini .bar{
+        display: block;
+    }
+    .player-mini{
+        justify-content: flex-start;
+    }
 }
+
+
+
 
 @media screen and (max-height: 1000px){
     .cta{
