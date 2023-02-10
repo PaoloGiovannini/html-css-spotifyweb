@@ -73,13 +73,7 @@ ul li{
 
 
 
-.container-bar{
-    width: 100%;
-}
 
-.player-mini .bar{
-    display: none;
-}
 
 /* css */
 
@@ -102,6 +96,14 @@ main{
 
 .biglogo{
     display: none;
+    animation: logodisco 3s linear infinite;
+}
+
+@keyframes logodisco{
+    0%   {filter: invert(20%) sepia(96%) saturate(6275%) hue-rotate(244deg) brightness(92%) contrast(106%);}
+    25%  {filter: invert(90%) sepia(29%) saturate(1713%) hue-rotate(333deg) brightness(96%) contrast(101%);}
+    50%  {filter: invert(47%) sepia(61%) saturate(474%) hue-rotate(80deg) brightness(93%) contrast(85%);}
+    100% {filter: invert(20%) sepia(96%) saturate(6275%) hue-rotate(244deg) brightness(92%) contrast(106%);}
 }
 
 .small-logo{
@@ -285,6 +287,13 @@ footer{
     font-size: 30px;
 }
 
+.container-bar{
+    width: 100%;
+}
+
+.player-mini .bar{
+    display: none;
+}
 
 .bar{
     height: 5px;
@@ -338,7 +347,17 @@ footer{
 /* hover */
 ul li a:hover{
     color: var(--white);
+    animation: disco 3s linear infinite;
 }
+
+@keyframes disco{
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: red;}
+}
+
+
 
 .playlist a:hover h3{
 background-color: var(--white);
@@ -408,6 +427,16 @@ background-color: var(--white);
 
 .wrapper:hover .overlay{
     display: block;
+    border-radius: 50%;
+}
+
+
+.wrapper:hover img{
+    border-radius: 50%;
+}
+
+.wrapper img{
+    transition: all 3s;
 }
 
 .wrapper:hover .play{
