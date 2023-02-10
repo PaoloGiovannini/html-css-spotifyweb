@@ -71,8 +71,10 @@ ul li{
     justify-content: center;
 }
 
-.fa-heart{
-    margin: 0px 10px;
+
+
+.width70{
+    width: 70%;
 }
 /* css */
 
@@ -168,6 +170,7 @@ hr{
     top: 0;
     left: 50px;
     width: calc(100% - 50px);
+    
 }
 
 .cta span{
@@ -215,6 +218,7 @@ display: inline-block;
 footer{
     height: 100px;
     background-color: #282828;
+    padding: 0px 10px;
 }
 
 .music img{
@@ -228,10 +232,15 @@ footer{
     flex-direction: column;
     justify-content: center;
     line-height: 16px;
+    width: 30px;
 }
 
-.box1{
-    vertical-align: middle;
+.fa-heart{
+    margin: 0px 10px;
+}
+
+.box{
+   margin-left: 30px;
 }
 
 .small-text{
@@ -239,11 +248,80 @@ footer{
 }
 
 
-
 .footer-box{
     height: 100%;
 }
 
+.player i{
+    margin: 0px 5px;
+    font-size: 20px;
+}
+
+.icons{
+    margin-bottom: 10px;
+}
+
+.player i.fa-circle-play{
+    font-size: 30px;
+}
+
+
+.bar{
+    height: 5px;
+    background-color: #7d7f84;
+    position: relative;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.bar2{
+    height: 5px;
+    background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.current{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    top: -3px;
+    display: none;
+}
+
+.second{
+    margin-right: 10px;
+}
+
+.total-second{
+    margin-left: 10px;
+}
+
+.player{
+    width: 60%; 
+}
+
+.player-mini, .music{
+    width: 250px;
+}
+
+.player-mini i{
+    margin: 0px 5px;
+}
+
+.bar:hover .bar2{
+    background-color: lawngreen
+}
+
+.bar:hover .current{
+    display: block;
+}
 
 @media screen and (min-width: 576px){
     .sidebar{
@@ -358,6 +436,19 @@ footer{
         vertical-align: middle;
         margin-left: 8px;
     }
+
+    .text-album{
+        width: 100%;
+    }
+
+    .player i{
+        margin: 0px 10px;
+    }
+
+    .player i.fa-circle-play{
+        margin: 0 10px;
+
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -370,9 +461,12 @@ footer{
         margin-right: 15px;
     }
 
-    .box2{
+    .box{
         flex-direction: row;
+        margin-left: 0;
     }
+
+
     
 }
 
